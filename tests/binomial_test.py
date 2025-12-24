@@ -6,7 +6,7 @@ from tests.context import assert_equal, _Add, _Mul, _Pow
 x = Symbol('x')
 y = Symbol('y')
 theta = Symbol('theta')
-gamma = Symbol('gamma')
+beta = Symbol('beta')
 
 
 def test_binomial_numeric():
@@ -18,7 +18,7 @@ def test_binomial_symbols():
 
 
 def test_binomial_greek_symbols():
-    assert_equal("\\binom{\\theta}{\\gamma}", binomial(theta, gamma))
+    assert_equal("\\binom{\\theta}{\\beta}", binomial(theta, beta))
 
 
 def test_binomial_expr():
@@ -34,4 +34,4 @@ def test_choose_symbols():
 
 
 def test_choose_greek_symbols():
-    assert_equal("{\\theta \\choose \\gamma}", binomial(theta, gamma))
+    assert_equal("{\\theta \\choose \\beta}", binomial(theta, beta))
